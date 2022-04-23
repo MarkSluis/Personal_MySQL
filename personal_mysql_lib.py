@@ -114,9 +114,8 @@ class MySQL():
                 temp_str += i + ", "
             cursor.execute("SELECT " + temp_str[:-2] + " FROM " + table)
         result = cursor.fetchall()
-        print("how the query is executed and returned: ")
-        for i in result:
-            print(i)
+        print("The query is executed and returned: ")
+        print(result)
         return result
 
 # Test dropping and creating schemes
